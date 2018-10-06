@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "comma-dangle": [
+      "error", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "semi": [
+      "error",
+      "always",
+      {"omitLastInOneLineBlock": true}
+    ],
+    "no-underscore-dangle": "off",
+    "no-await-in-loop": "off",
+    "consistent-return": "off",
+    "no-use-before-define": [
+      "error",
+      {"functions": false}
+    ]
+  }
+}
