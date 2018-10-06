@@ -7356,6 +7356,4 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     'use strict';
 
     require('babel-polyfill');
-
-    console.log('hello');
   }, { "babel-polyfill": 1 }] }, {}, [327]);
