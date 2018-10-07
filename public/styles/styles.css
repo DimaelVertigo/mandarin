@@ -1342,6 +1342,96 @@ body {
 .grid-list li {
   margin-bottom: 25px;
 }
+.catalog-list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.catalog-list__item {
+  padding: 15px 32px;
+  width: 288px;
+  height: 574px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+.catalog-list__item:hover {
+  box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.35);
+  border: 1px solid gainsboro;
+}
+.catalog-list__item:hover .catalog-list__links {
+  opacity: 1;
+}
+.catalog-list__image img {
+  width: 100%;
+}
+.catalog-list__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2b2620;
+  font-weight: 700;
+}
+.catalog-list__links {
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+.catalog-list__links a {
+  cursor: pointer;
+  color: #2b2620;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-decoration: underline;
+}
+.catalog-list__links a:hover {
+  text-decoration: none;
+}
+.articles-widget {
+  margin-top: 92px;
+  padding: 40px 0 90px;
+  background-color: #f7f7f7;
+}
+.articles-widget__title {
+  color: #333;
+  font-size: 2.4rem;
+}
+.articles-widget-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.articles-widget-list li {
+  display: flex;
+  max-width: 385px;
+}
+.articles-widget-list__image {
+  flex-shrink: 0;
+  width: 164px;
+  margin-right: 25px;
+}
+.articles-widget-list__image img {
+  width: 100%;
+}
+.articles-widget-list__description {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.articles-widget-list__link {
+  color: #999;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+.articles-widget-list__link:hover {
+  text-decoration: none;
+}
 .news {
   display: flex;
   justify-content: space-between;
@@ -1421,6 +1511,9 @@ body {
 .bottom-controls__next:hover {
   text-decoration: none;
 }
+.bottom-controls__prev {
+  text-align: left;
+}
 .bottom-controls__prev::before {
   content: '';
   background: url("../images/prev-arrow-type-1.png");
@@ -1428,6 +1521,9 @@ body {
   height: 27px;
   float: left;
   margin-right: 17px;
+}
+.bottom-controls__next {
+  text-align: right;
 }
 .bottom-controls__next::after {
   content: '';
