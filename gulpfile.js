@@ -42,7 +42,7 @@ gulp.task('serve', () => {
  * Collect all html and send to /public
  */
 gulp.task('markup', () => (
-  gulp.src(`${paths.src}index.html`)
+  gulp.src([`${paths.src}index.html`, `${paths.src}product.html`])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
