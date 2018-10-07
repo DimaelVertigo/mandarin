@@ -163,10 +163,10 @@
 
 .hits-list {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	li {
-		width: 266px;
+		width: 270px;
 		height: 369px;
 		background-color: white;
 		border-radius: 5px;
@@ -174,6 +174,7 @@
 		flex-direction: column;
 		padding: 23px 27px 20px;
 		border: 1px solid transparent;
+		z-index: 3;
 		
 		.transition();
 		&:hover {
@@ -181,7 +182,7 @@
 		}
 	}
 	&__image {
-		width: 209px;
+		//width: 209px;
 		height: 178px;
 		img {
 			width: 100%;
