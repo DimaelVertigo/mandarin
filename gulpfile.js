@@ -48,6 +48,7 @@ gulp.task('markup', () => (
     `${paths.src}grid.html`,
     `${paths.src}catalog.html`,
     `${paths.src}news.html`,
+    `${paths.src}news2.html`,
     `${paths.src}photo.html`,
     `${paths.src}reviews.html`,
     `${paths.src}specs.html`,

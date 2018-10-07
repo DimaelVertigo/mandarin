@@ -154,6 +154,10 @@ body {
   max-width: 1270px;
   margin: 0 auto;
 }
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
 .button {
   margin-top: 20px;
   height: 51px;
@@ -1337,6 +1341,118 @@ body {
 }
 .grid-list li {
   margin-bottom: 25px;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.holiday {
+  width: 42.834645669%;
+  margin: 68px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.holiday__image {
+  margin-bottom: 35px;
+  align-self: center;
+}
+.holiday__image img {
+  width: 100%;
+}
+.holiday p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.news-aside {
+  width: 21.57480315%;
+  flex-shrink: 0;
+  background-color: #f9fbf0;
+  padding: 15px;
+}
+.news-aside__title {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.news-aside__article {
+  margin-bottom: 50px;
+}
+.news-aside__article a {
+  cursor: pointer;
+}
+.news-aside__name {
+  margin-top: 15px;
+  color: #333;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.all-news {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  float: right;
+}
+.all-news:hover {
+  text-decoration: none;
+}
+.bottom-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 87px;
+}
+.bottom-controls__prev,
+.bottom-controls__next {
+  color: #999;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+.bottom-controls__prev:hover,
+.bottom-controls__next:hover {
+  text-decoration: none;
+}
+.bottom-controls__prev::before {
+  content: '';
+  background: url("../images/prev-arrow-type-1.png");
+  width: 14px;
+  height: 27px;
+  float: left;
+  margin-right: 17px;
+}
+.bottom-controls__next::after {
+  content: '';
+  background: url("../images/prev-arrow-type-1.png");
+  width: 14px;
+  height: 27px;
+  float: right;
+  transform: rotate(180deg);
+  margin-left: 17px;
+}
+.blog {
+  margin-top: 45px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.blog__image {
+  margin-right: 20px;
+}
+.blog__texts {
+  padding-right: 70px;
+}
+.blog__texts p {
+  margin-bottom: 25px;
+  font-weight: 400;
+  line-height: 1.8rem;
 }
 .photo__carousel {
   margin: 50px 0;
