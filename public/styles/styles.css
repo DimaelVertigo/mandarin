@@ -1361,6 +1361,9 @@ body {
   right: 0;
   transform: translateX(-50%) rotate(180deg);
 }
+.reviews {
+  margin-top: 25px;
+}
 .specs {
   position: relative;
   width: 48%;

@@ -1,0 +1,27 @@
+.photo {
+	&__carousel {
+		margin: 50px 0;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__controls {
+		a {
+			position: absolute;
+			background: url("../images/prev-arrow-type4.png");
+			width: 30px;
+			height: 94px;
+			z-index: 1;
+			top: 50%;
+			transform: translateX(-50%);
+		}
+		.prev {
+			left: 0;
+		}
+		.next {
+			right: 0;
+			transform: translateX(-50%) rotate(180deg);
+		}
+	}
+}

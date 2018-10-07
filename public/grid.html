@@ -273,274 +273,256 @@
 
 
 </header>
-<main>
+
+<main class="grid-page">
 	<div class="container">
 		<ul class="breadcrumbs">
 			<li class="breadcrumbs__item"><a href="#">Каталог мебели</a></li>
 			<li class="breadcrumbs__item"><a href="#">Кухни под заказ</a></li>
-			<li class="breadcrumbs__item"><a href="#">Кухни с патинированными фасадами</a></li>
 		</ul>
 
-		<section class="product">
-			<div class="product-head">
-				<div class="product-head__texts">
-					<h1 class="product-head__title">Кухня Кантри дуб Монреаль</h1>
-					<div class="product-head__status product-head__status--active">в наличии</div>
-				</div>
-				<div class="product-head__rating"></div>
-			</div>
-
-			<ul class="product-menu">
-				<li class="product-menu__item product-menu__item--active"><a href="product.html">Описание товара</a></li>
-				<li class="product-menu__item"><a href="specs.html">Характеристики</a></li>
-				<li class="product-menu__item"><a href="photo.html">Фото</a></li>
-				<li class="product-menu__item"><a href="reviews.html">Отзывы</a></li>
-			</ul>
-
-			<div class="product-body">
-				<div class="gallery">
-					<div class="gallery__mark"></div>
-					<div class="gallery__code">код С0123456</div>
-					<div class="gallery__image">
-						<img src="images/photos/product.jpg" alt="">
-					</div>
-					<ul class="gallery__thumbs">
-						<li><img src="images/photos/gallery.jpg" alt=""></li>
-						<li><img src="images/photos/gallery.jpg" alt=""></li>
-						<li><img src="images/photos/gallery.jpg" alt=""></li>
-						<li><img src="images/photos/gallery.jpg" alt=""></li>
+		<section class="grid-section">
+			<aside class="aside">
+				<section class="aside-section">
+					<ul class="fast-offer">
+						<li><a href="#">Встроенные Шкафы-купе</a></li>
+						<li><a href="#">Готовые Шкафы-купе</a></li>
+						<li><a href="#">ШКАФЫ КУПЕ НА ЗАКАЗ</a></li>
+						<li><a href="#">Гардеробные</a></li>
+						<li><a href="#">Угловые шкафы-купе</a></li>
+						<li><a href="#">Шкафы распашные</a></li>
 					</ul>
 
-					<div class="gallery__annotation">* Внимание! Изображения товара на мониторе, включая цвет, могут отличаться
-						от
-						реального внешнего вида.
+					<div class="aside-price">
+						<div class="title">цена 1 - 22847 грн</div>
+						<input type="range" list="tickmarks">
+						<datalist id="tickmarks">
+							<option value="0" label="0%">
+							<option value="10">
+							<option value="20">
+							<option value="30">
+							<option value="40">
+							<option value="50" label="50%">
+							<option value="60">
+							<option value="70">
+							<option value="80">
+							<option value="90">
+							<option value="100" label="100%">
+						</datalist>
 					</div>
 
-
-					<div class="product-description">
-						<ul>
-							<li>Габаритные размеры: 3800 мм</li>
-							<li>Производитель: "Мандарин-мебель" (г. Одесса)</li>
-							<li>Материал фасада: МДФ крашенный</li>
-							<li>Столешница: кварц АТЕМ (Украина)</li>
-							<li>Фурнитура: BLUM (Австрия)</li>
-						</ul>
-
-						<div class="product-description__texts">
-							<p>
-								В пожеланиях клиента было: создать кухню в стиле кантри с фасадами, ярко выражающими структуру дерева,
-								которая впишется в уже имеющийся интерьер. При замере помещения наш дизайнер обратил внимание на
-								балочный потолок, это и стало отправной точкой в проектировании кухни.
-							</p>
-							<p>
-								Главный акцент мы решили сделать на фасадах. Для этой кухни идеальным вариантом стал фасад Савонна в
-								цвете дуб натуральный. Ровные линии выгодно подчеркнутые нанесением темно коричневой патины придали
-								кухне насыщенный благородный оттенок. Столешница была подобрана в цвет балок, тем самым соединив все
-								элементы воедино.
-							</p>
-							<div class="collapse" id="collapseExample">
-								<div>
-									Габаритные размеры: 3200*2700 мм
-
-									Кухня выполнена с использованием следующих материалов:
-
-									Корпус выполнен из ДСП украинского производителя KRONO.
-
-									Механизмы выдвижных ящиков немецкого производства HAFELE.
-
-									Фасады – МДФ пленка с нанесением патины
-
-									Столешница – австрийского производства Egger.
-								</div>
+					<ul class="filter">
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">"Мандарин мебель"
 							</div>
-							<a class="" data-toggle="collapse" href="#collapseExample" role="button"
-								 aria-expanded="false" aria-controls="collapseExample">
-								развернуть
-							</a>
-						</div>
-
-
-					</div>
+							<span class="filter__number">26</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Фабрика "DOMINI"
+							</div>
+							<span class="filter__number">4</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Фабрика "VIP Mater" (г. Белая Церковь)
+							</div>
+							<span class="filter__number">6</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Фабрика "Влаби" (г.Запорожье)
+							</div>
+							<span class="filter__number">92</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">"Мандарин мебель"
+							</div>
+							<span class="filter__number">26</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Фабрика "DOMINI"
+							</div>
+							<span class="filter__number">4</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Фабрика "VIP Mater" (г. Белая Церковь)
+							</div>
+							<span class="filter__number">6</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Фабрика "Влаби" (г.Запорожье)
+							</div>
+							<span class="filter__number">92</span>
+						</li>
+					</ul>
+				</section>
+				<section class="aside-section">
+					<div class="title">Наличие</div>
+					<ul class="filter">
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Нет в наличии
+							</div>
+							<span class="filter__number">688</span>
+						</li>
+					</ul>
+					<div class="title">высота</div>
+					<ul class="filter">
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">2100
+							</div>
+							<span class="filter__number">5</span>
+						</li>
+					</ul>
+					<div class="title">тип шкафа</div>
+					<ul class="filter">
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Угловой шкаф
+							</div>
+							<span class="filter__number">2</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Прямой шкаф
+							</div>
+							<span class="filter__number">87</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Маленький шкаф
+							</div>
+							<span class="filter__number">10</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Большой шкаф
+							</div>
+							<span class="filter__number">56</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<input type="checkbox">Встроенный шкаф
+							</div>
+							<span class="filter__number">18</span>
+						</li>
+					</ul>
+				</section>
+				<section class="aside-section">
+					<div class="title">цвет корпуса</div>
+					<ul class="filter">
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--1"></i>
+								<input type="checkbox">Анжелик
+							</div>
+							<span class="filter__number">55</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--2"></i>
+								<input type="checkbox">Дуб Молочный
+							</div>
+							<span class="filter__number">6</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--3"></i>
+								<input type="checkbox">Дуб Трюфель
+							</div>
+							<span class="filter__number">2</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--4"></i>
+								<input type="checkbox">Дуб Сонома
+							</div>
+							<span class="filter__number">59</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--5"></i>
+								<input type="checkbox">Венге темный
+							</div>
+							<span class="filter__number">55</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--6"></i>
+								<input type="checkbox">Венге светлый
+							</div>
+							<span class="filter__number">98</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--7"></i>
+								<input type="checkbox">Орех темны
+							</div>
+							<span class="filter__number">12</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--8"></i>
+								<input type="checkbox">Ясень шимо темный
+							</div>
+							<span class="filter__number">8</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--9"></i>
+								<input type="checkbox">Орех лесной
+							</div>
+							<span class="filter__number">15</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--10"></i>
+								<input type="checkbox">Вишня
+							</div>
+							<span class="filter__number">33</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--11"></i>
+								<input type="checkbox">Ольха
+							</div>
+							<span class="filter__number">32</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--12"></i>
+								<input type="checkbox">Бук
+							</div>
+							<span class="filter__number">64</span>
+						</li>
+						<li>
+							<div class="filter__name">
+								<i class="filter__icon filter__icon--13"></i>
+								<input type="checkbox">Яблоня
+							</div>
+							<span class="filter__number">55</span>
+						</li>
+					</ul>
+				</section>
+			</aside>
+			<div class="grid-wrapper">
+				<div class="sort">
+					<div class="sort__label">Сортировка:</div>
+					<ul class="sort__state">
+						<li class="sort__item sort__item--active">по популярности</li>
+						<li class="sort__item">сначала дешевле</li>
+						<li class="sort__item">по названию</li>
+					</ul>
 				</div>
 
-				<div class="product-body__right">
-					<div class="product-body__right-top">
-						<div class="product-price">
-							<div class="product-price__description">Скидка - 450 грн действует до 24 июня !</div>
-							<div class="product-price__old-value">46 900</div>
-							<div class="product-price__value">46 450 грн</div>
-							<button class="button"><i></i>купить</button>
-							<a href="#" class="product-price__buy-by-click">купить в один клик</a>
-							<div class="product-price__social">
-								<span>Пишите Нам в Мессенджеры</span>
-								<ul>
-									<li>
-										<a href="#"></a>
-									</li>
-									<li>
-										<a href="#"></a>
-									</li>
-									<li>
-										<a href="#"></a>
-									</li>
-								</ul>
-							</div>
-							<a href="#" class="product-price__to-favourites"><i></i>Добавить в избранное</a>
-						</div>
-						<div class="product-service">
-							<acrticle>
-								<h6>Вызов Замерщика</h6>
-								<p>Во избежание ошибок и неточностей замер всегда производится специалистами
-									компании -
-									бесплатно!</p>
-							</acrticle>
-
-							<article>
-								<p class="product-service__marked">Сборка и Дизайн проект Бесплатно!</p>
-							</article>
-
-							<article>
-								<h6>Сроки изготовления</h6>
-								<p>Заказ выполняется в индивидуальные и согласованные отдельно для каждого Заказчика сроки (от 14
-									дней).</p>
-							</article>
-							<article>
-								<h6>Гарантия</h6>
-								<p>18 месяцев, послегарантийное обслуживание</p>
-							</article>
-							<article>
-								<h6>Оплата</h6>
-								<p>Наличный расчет, Оплата на карту Приват Банка</p>
-							</article>
-							<article>
-								<h6>Доставка</h6>
-								<p>Самовывоз из наших магазинов БЕСПЛАТНО
-									Курьерские службы Ноа Пошта
-									Курьер по вашему адресу бесплатно</p>
-							</article>
-
-						</div>
-					</div>
-					<div class="product-body__right-bottom">
-						<div class="product-features">
-							<div class="product-sizes">
-								<section>
-									<div class="product-sizes__title">Ширина:</div>
-									<ul>
-										<li>
-											<button class="product-sizes__button product-sizes__button--active">110 см</button>
-										</li>
-										<li>
-											<button class="product-sizes__button">110 см</button>
-										</li>
-										<li>
-											<button class="product-sizes__button">110 см</button>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<div class="product-sizes__title">Глубина:</div>
-									<ul>
-										<li>
-											<button class="product-sizes__button product-sizes__button--active">110 см</button>
-										</li>
-										<li>
-											<button class="product-sizes__button">110 см</button>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<div class="product-sizes__title">Высота:</div>
-									<ul>
-										<li>
-											<button class="product-sizes__button product-sizes__button--active">110 см</button>
-										</li>
-										<li>
-											<button class="product-sizes__button">110 см</button>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="product-options">
-								<div class="product-options__title">Дополнительные опции</div>
-								<ul>
-									<li>
-										<div>
-											<div class="product-options__type"><input type="checkbox">1 ящик в шкаф купе</div>
-										</div>
-										<div class="product-options__value">+ 238 грн</div>
-									</li>
-									<li>
-										<div>
-											<div class="product-options__type"><input type="checkbox">Карниз для шкафа купе</div>
-										</div>
-										<div class="product-options__value">+ 493 грн</div>
-									</li>
-									<li>
-										<div>
-											<div class="product-options__type"><input type="checkbox">Консоль угловая без карниза</div>
-										</div>
-										<div class="product-options__value">+ 963 грн</div>
-									</li>
-									<li>
-										<div>
-											<div class="product-options__type"><input type="checkbox">Консоль угловая с карнизом</div>
-										</div>
-										<div class="product-options__value">+ 1055 грн</div>
-									</li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="complectation">
-			<div class="complectation__title">Кухня Кантри дуб Монреаль сотоит из:</div>
-			<ul class="complectation__list">
-				<li class="complectation__item">
-					<div class="complectation__image">
-						<img src="images/photos/complectation.png" alt="">
-					</div>
-					<a href="#" class="complectation__name">Цена кухни 2.0 безучета столешниц МР-645</a>
-					<button class="complectation__button button btn"><i></i>купить</button>
-				</li>
-				<li class="complectation__item">
-					<div class="complectation__image">
-						<img src="images/photos/complectation.png" alt="">
-					</div>
-					<a href="#" class="complectation__name">Цена кухни 2.0 безучета столешниц МР-645</a>
-					<button class="complectation__button button btn"><i></i>купить</button>
-				</li>
-				<li class="complectation__item">
-					<div class="complectation__image">
-						<img src="images/photos/complectation.png" alt="">
-					</div>
-					<a href="#" class="complectation__name">Цена кухни 2.0 безучета столешниц МР-645</a>
-					<button class="complectation__button button btn"><i></i>купить</button>
-				</li>
-				<li class="complectation__item">
-					<div class="complectation__image">
-						<img src="images/photos/complectation.png" alt="">
-					</div>
-					<a href="#" class="complectation__name">Цена кухни 2.0 безучета столешниц МР-645</a>
-					<button class="complectation__button button btn"><i></i>купить</button>
-				</li>
-			</ul>
-		</section>
-
-		<section class="recommendations">
-			<div class="recommendations__title">С этим товаром покупают</div>
-			<div class="hits-carousel">
-				<div class="hits-carousel__controls">
-					<a href="#" class="prev"></a>
-					<a href="#" class="next"></a>
-				</div>
-				<ul class="hits-list">
+				<ul class="grid-list hits-list">
 					<li>
 						<div class="hits-list__image">
 							<img src="images/photos/carousel1.jpg" alt="">
@@ -565,7 +547,7 @@
 						<div class="hits-list__image">
 							<img src="images/photos/carousel3.jpg" alt="">
 						</div>
-						<a href="#" class="hits-list__name">Пиtсьменный стол Студент-2</a>
+						<a href="#" class="hits-list__name">Письменный стол Студент-2</a>
 						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
 							class="hits-list__exist">В наличии</span></div>
 						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
@@ -579,12 +561,117 @@
 							class="hits-list__exist">В наличии</span></div>
 						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
 					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel1.jpg" alt="">
+						</div>
+						<a href="product.html" class="hits-list__name">Диван Марс 2
+							<div class="hits-list__mark"></div>
+						</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel2.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Этажерка Дерево Е-36</a>
+						<div class="hits-list__status"><span class="hits-list__price">3 010 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel3.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Письменный стол Студент-2</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel4.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Диван Марс 2</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel1.jpg" alt="">
+						</div>
+						<a href="product.html" class="hits-list__name">Диван Марс 2
+							<div class="hits-list__mark"></div>
+						</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel2.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Этажерка Дерево Е-36</a>
+						<div class="hits-list__status"><span class="hits-list__price">3 010 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel3.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Письменный стол Студент-2</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel4.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Диван Марс 2</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel1.jpg" alt="">
+						</div>
+						<a href="product.html" class="hits-list__name">Диван Марс 2
+							<div class="hits-list__mark"></div>
+						</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel2.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Этажерка Дерево Е-36</a>
+						<div class="hits-list__status"><span class="hits-list__price">3 010 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
+					<li>
+						<div class="hits-list__image">
+							<img src="images/photos/carousel3.jpg" alt="">
+						</div>
+						<a href="#" class="hits-list__name">Письменный стол Студент-2</a>
+						<div class="hits-list__status"><span class="hits-list__price">8 030 грн</span><span
+							class="hits-list__exist">В наличии</span></div>
+						<a href="#" class="hits-list__to-favourites"><i></i>Добавить в избранное</a>
+					</li>
 				</ul>
 			</div>
-
 		</section>
 	</div>
 </main>
+
 <footer class="site-footer">
 	<div class="container">
 		<div class="map">
