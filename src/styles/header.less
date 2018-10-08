@@ -167,10 +167,6 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		background-color: #fdf2e7;
-		
-		& > * {
-			//flex: 1 10%;
-		}
 	}
 	&__item {
 		display: flex;
@@ -222,8 +218,12 @@
 	width: 270px;
 	background-color: #fff;
 	display: none;
+	z-index: 5;
 	&--visible {
 		display: block;
+	}
+	&--fixed {
+		position: static;
 	}
 	li {
 		padding: 0 15px;
@@ -282,17 +282,22 @@
 				background: url("../images/navigation/cupboard.png") no-repeat;
 			}
 		}
+		&:not(:last-child) {
+			.main-category-menu__link {
+				border-bottom: 1px solid #e1e1e1;
+			}
+		}
 	}
 	&__link {
 		display: flex;
 		align-items: center;
-		height: 40px;
+		height: 39px;
 		color: #222;
 		font-size: 1.4rem;
 		text-transform: uppercase;
 		width: 100%;
-		border-bottom: 1px solid #e1e1e1;
 		position: relative;
+		
 		&::after {
 			content: '>';
 			position: absolute;
@@ -356,6 +361,7 @@
 	position: relative;
 	display: flex;
 	padding: 28px 22px 25px 55px;
+	margin-top: -1px;
 	
 	
 	.buttons {
