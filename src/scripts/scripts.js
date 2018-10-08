@@ -1,3 +1,4 @@
 import 'babel-polyfill';
 
-console.log('hello')
+// const dropdownItems = document.querySelectorAll('.dropdown-item');
+// console.log(dropdownItems)

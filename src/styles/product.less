@@ -1,0 +1,507 @@
+.breadcrumbs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	&__item {
+		&:not(:last-child) {
+			display: flex;
+			align-items: center;
+			&::after {
+				content: '';
+				display: block;
+				float: right;
+				background: url("../images/prev-arrow-type3.png");
+				width: 8px;
+				height: 13px;
+				margin-left: 8px;
+				margin-right: 8px;
+			}
+		}
+		a {
+			color: #222;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.product {
+	.container {
+		padding: 0 12px;
+	}
+}
+
+.product-head {
+	&__texts {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__title {
+		font-size: 3rem;
+		margin-right: 44px;
+	}
+	&__status {
+		color: #999;
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		&--active {
+			&::before {
+				content: '';
+				background: url("../images/icon-checkbox-green.png");
+				width: 20px;
+				height: 20px;
+				margin-right: 8px;
+			}
+		}
+	}
+	&__rating {
+		background: url("../images/rating.png");
+		width: 245px;
+		height: 47px;
+		margin-top: 10px;
+	}
+}
+
+.product-menu {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 25px;
+	border-bottom: 1px solid #d5e79c;
+	padding-bottom: 24px;
+	
+	&__item {
+		a {
+			color: #333;
+			font-size: 1.8rem;
+			padding-right: 28px;
+			border-bottom: 10px solid transparent;
+			padding-bottom: 15px;
+			.transition();
+			&:hover {
+				opacity: .75;
+				text-decoration: none;
+			}
+		}
+		& + & {
+			a {
+				padding-left: 28px;
+			}
+		}
+		&--active {
+			a {
+				border-bottom: 10px solid #d5e79c;
+			}
+		}
+	}
+}
+
+.product-body {
+	margin-top: 39px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__right {
+		width: 50%;
+		
+	}
+	&__right-top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__right-bottom {
+		margin-top: 25px;
+	}
+}
+
+.gallery {
+	position: relative;
+	width: 48%;
+	
+	&__mark {
+		position: absolute;
+		top: -34px;
+		left: 0;
+		background: url("../images/flag.png") center;
+		width: 50px;
+		height: 32px;
+	}
+	&__code {
+		position: absolute;
+		top: -25px;
+		right: 0;
+		color: #666;
+		font-size: 1.2rem;
+	}
+	&__image {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	
+	&__thumbs {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 7px;
+		
+		li {
+			width: 66px;
+			height: 60px;
+			border: 2px solid #647c95;
+			& + li {
+				margin-left: -2px;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	&__annotation {
+		color: #999;
+		font-size: 1.1rem;
+		margin-top: 25px;
+	}
+}
+
+.product-price {
+	width: 317px;
+	height: 415px;
+	background-color: #f9fbf0;
+	border: 1px solid #e6e6e6;
+	border-radius: 3px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 39px;
+	padding-top: 24px;
+	&__description {
+		color: #f60;
+		font-size: 1.2rem;
+	}
+	&__old-value {
+		margin-top: 25px;
+		color: #666;
+		font-size: 2.2rem;
+		text-decoration: line-through;
+	}
+	&__value {
+		margin-top: 10px;
+		color: #f60;
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+	
+	&__buy-by-click {
+		color: #333;
+		font-size: 1.4rem;
+		text-decoration: underline;
+		margin-top: 15px;
+		text-align: center;
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__social {
+		margin-top: 30px;
+		text-align: center;
+		color: #666;
+		font-size: 1.2rem;
+		ul {
+			margin-top: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		li {
+			margin: 0 7px;
+			&:nth-child(1) {
+				a {
+					background: url("../images/ico-tg.png") center;
+					background-size: 100%;
+					
+				}
+			}
+			&:nth-child(2) {
+				a {
+					background: url("../images/ico-wp.png") center;
+					background-size: 100%;
+				}
+			}
+			&:nth-child(3) {
+				a {
+					background: url("../images/ico-viber.png") center;
+					background-size: 100%;
+				}
+			}
+			a {
+				display: block;
+				width: 36px;
+				height: 36px;
+			}
+		}
+	}
+	
+	&__to-favourites {
+		margin-top: 50px;
+		color: #999;
+		font-size: 1.2rem;
+		&::before {
+			content: '';
+			display: block;
+			float: left;
+			background: url("../images/icon-favorites.png");
+			width: 21px;
+			height: 18px;
+			margin-right: 19px;
+		}
+	}
+}
+
+.product-service {
+	//max-width: 44%;
+	font-size: 1.2rem;
+	margin-left: 20px;
+	article {
+		margin: 15px 0;
+	}
+	h6 {
+		font-weight: 700;
+	}
+	&__marked {
+		color: #f60;
+		font-weight: 700;
+	}
+}
+
+.product-description {
+	margin-top: 5px;
+	li {
+		color: black;
+		&:not(:last-child) {
+			margin-bottom: 22px;
+		}
+	}
+	&__texts {
+		margin-top: 85px;
+		color: #999;
+		a {
+			float: right;
+			color: #666;
+			font-size: 1.4rem;
+			text-decoration: underline;
+		}
+		p {
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.product-features {
+}
+.product-sizes {
+	width: 100%;
+	padding-right: 60px;
+	section {
+		margin-bottom: 7px;
+	}
+	&__title {
+		color: #010101;
+		font-family: 'Roboto';
+		font-size: 1.4rem;
+		font-weight: 700;
+	}
+	ul {
+		display: flex;
+		margin-top: 5px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #eeeeee;
+	}
+	li {
+		margin-right: 4px;
+	}
+	&__button {
+		width: 66px;
+		height: 37px;
+		background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
+		border: 1px solid #e8e8e8;
+		border-radius: 2px;
+		box-shadow: inset 0 -5px 2px #c1c1c1;
+		color: black;
+		font-family: 'Roboto';
+		font-size: 1.4rem;
+		font-weight: 700;
+		&--active {
+			background-image: linear-gradient(to top, #4dbe41 0%, #4dbe41 100%);
+			border: 1px solid #e8e8e8;
+			border-radius: 2px;
+			box-shadow: inset 2.5px 3.2px 6px rgba(0, 0, 0, 0.35);
+			color: #fff;
+		}
+	}
+}
+
+.product-options {
+	color: #010101;
+	font-family: 'Roboto';
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding-right: 60px;
+	&__title {
+		font-weight: 700;
+	}
+	ul {
+		width: 100%;
+		border-bottom: 1px solid #eeeeee;
+		padding-bottom: 16px;
+	}
+	li {
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0;
+	}
+	&__type {
+		font-weight: 400;
+		input {
+			margin-right: 8px;
+		}
+	}
+	&__value {
+		font-weight: 700;
+	}
+}
+
+.complectation {
+	margin-top: 110px;
+	&__title {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 67px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 220px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__image {
+		img {
+			width: 100%;
+		}
+	}
+	&__name {
+		color: #2b2620;
+		text-decoration: underline;
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__button {
+		height: 41px;
+		font-size: 1.9rem;
+		i {
+			background: url("../images/icon-cart3.png") center;
+			width: 21px;
+			height: 19px;
+			flex-shrink: 0;
+		}
+	}
+}
+
+.recommendations {
+	margin-top: 120px;
+	&__title {
+		text-align: center;
+		color: black;
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		li {
+			width: 266px;
+			height: 369px;
+			background-color: white;
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			padding: 23px 27px 20px;
+			border: 1px solid transparent;
+			
+			.transition();
+			&:hover {
+				border: 1px solid #cecece;
+			}
+		}
+		&__image {
+			width: 209px;
+			height: 178px;
+			img {
+				width: 100%;
+			}
+		}
+		&__name {
+			padding-top: 35px;
+			color: #2b2620;
+			text-decoration: underline;
+			position: relative;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&__mark {
+			position: absolute;
+			top: 5px;
+			left: -13px;
+			background: url("../images/flag.png") center;
+			width: 50px;
+			height: 32px;
+		}
+		&__status {
+			color: #2b2620;
+			margin-top: 13px;
+		}
+		&__price {
+			font-weight: 700;
+		}
+		&__exist {
+			color: #626262;
+			font-size: 1.2rem;
+			margin-left: 11px;
+		}
+		&__to-favourites {
+			margin-top: 32px;
+			display: block;
+			color: #666;
+			font-size: 1.2rem;
+			display: flex;
+			align-items: center;
+			&:hover {
+				cursor: pointer;
+			}
+			i {
+				background: url("../images/icon-favorites2.png");
+				width: 27px;
+				height: 24px;
+				float: left;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+

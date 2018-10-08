@@ -1,0 +1,157 @@
+.grid-page {
+	.container {
+		padding: 0 15px;
+	}
+}
+.grid-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.aside {
+	width: 293px;
+	flex-shrink: 0;
+	margin-top: 47px;
+	margin-right: 25px;
+}
+
+.aside-section {
+	border-radius: 5px;
+	border: 1px solid #e5e5e5;
+	padding: 18px;
+	margin-bottom: 15px;
+	.title {
+		text-transform: uppercase;
+		font-family: 'Roboto';
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+}
+.fast-offer {
+	a {
+		text-decoration: underline;
+		line-height: 2.2rem;
+		display: block;
+		color: #222;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.aside-price {
+	margin: 40px 0 20px;
+}
+
+.filter {
+	margin-bottom: 28px;
+	li {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #e0e0e0;
+		padding: 10px 0;
+		align-items: center;
+	}
+	&__name {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		width: 19px;
+		height: 19px;
+		margin-right: 5px;
+		&--1 {
+			background-color: #1c1c1c;
+		}
+		&--2 {
+			background-color: #2b2620;
+		}
+		&--3 {
+			background-color: #4dbe41;
+		}
+		&--4 {
+			background-color: #97a95e;
+		}
+		&--5 {
+			background-color: #9c3;
+		}
+		&--6 {
+			background-color: #010101;
+		}
+		&--7 {
+			background-color: #242424;
+		}
+		&--8 {
+			background-color: #626262;
+		}
+		&--9 {
+			background-color: #999;
+		}
+		&--10 {
+			background-color: #666;
+		}
+		&--11 {
+			background-color: #cecece;
+		}
+		&--12 {
+			background-color: #e0e0e0;
+		}
+		&--13 {
+			background-color: #f2f2f2;
+		}
+	}
+	&__number {
+		background-color: #d0d0d0;
+		padding: 5px;
+		border-radius: 3px;
+		height: 23px;
+		display: flex;
+		align-items: center;
+	}
+	input {
+		margin-right: 5px;
+	}
+}
+
+.grid-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.sort {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	&__label {
+		margin-right: 8px;
+	}
+	&__state {
+		display: flex;
+	}
+	&__item {
+		padding: 0 10px;
+		border: 1px solid #e5e5e5;
+		height: 28px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		&+li {
+			margin-left: -1px;
+		}
+		&:first-child {
+			border-radius: 3px 0 0 3px;
+		}
+		&:last-child {
+			border-radius: 3px 3px 0 0;
+		}
+		&--active {
+			background-color: #e5e5e5;
+		}
+	}
+}
+
+.grid-list {
+	li {
+		margin-bottom: 25px;
+	}
+}
