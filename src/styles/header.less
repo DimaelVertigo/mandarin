@@ -161,7 +161,7 @@
 }
 
 .navigation {
-	ul {
+	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -172,15 +172,36 @@
 			//flex: 1 10%;
 		}
 	}
-	li {
+	&__item {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	a {
+	
+}
+
+.main-category {
+	background-color: #d5e79c;
+	position: relative;
+	width: 270px;
+	&:hover {
+		.main-category-menu {
+			display: block;
+		}
+	}
+	
+	&__icon {
 		display: block;
+		background: url("../images/icon-burger.png");
+		width: 21px;
+		height: 14px;
+		margin-right: 37px;
+	}
+	&__link {
+		display: block;
+		height: 52px;
 		color: inherit;
-		padding: 22px 26px;
+		padding: 0 26px;
 		text-transform: uppercase;
 		text-align: center;
 		font-size: 1.6rem;
@@ -192,31 +213,118 @@
 			text-decoration: none;
 		}
 	}
-	
 }
 
-.main-category {
-	background-color: #d5e79c;
+.main-category-menu {
+	position: absolute;
+	top: 52px;
+	left: 0;
+	width: 270px;
+	background-color: #fff;
+	display: none;
+	&--visible {
+		display: block;
+	}
+	li {
+		padding: 0 15px;
+		&:nth-child(1) {
+			i {
+				background: url("../images/navigation/tree.png") no-repeat;
+			}
+		}
+		&:nth-child(2) {
+			i {
+				background: url("../images/navigation/shielf.png") no-repeat;
+			}
+		}
+		&:nth-child(3) {
+			i {
+				background: url("../images/navigation/tree.png") no-repeat;
+			}
+		}
+		&:nth-child(4) {
+			i {
+				background: url("../images/navigation/hanger.png") no-repeat;
+			}
+		}
+		&:nth-child(5) {
+			i {
+				background: url("../images/navigation/bed.png") no-repeat;
+			}
+		}
+		&:nth-child(6) {
+			i {
+				background: url("../images/navigation/kitchen.png") no-repeat;
+			}
+		}
+		&:nth-child(7) {
+			i {
+				background: url("../images/navigation/cradle.png") no-repeat;
+			}
+		}
+		&:nth-child(8) {
+			i {
+				background: url("../images/navigation/tv.png") no-repeat;
+			}
+		}
+		&:nth-child(9) {
+			i {
+				background: url("../images/navigation/desk-chair.png") no-repeat;
+			}
+		}
+		&:nth-child(10) {
+			i {
+				background: url("../images/navigation/mattress.png") no-repeat;
+			}
+		}
+		&:nth-child(11) {
+			i {
+				background: url("../images/navigation/cupboard.png") no-repeat;
+			}
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		color: #222;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+		position: relative;
+		&::after {
+			content: '>';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			.transition();
+		}
+		
+		&:hover {
+			opacity: .8;
+			text-decoration: none;
+			&::after {
+				right: -3px;
+			}
+		}
+	}
 	&__icon {
 		display: block;
-		background: url("../images/icon-burger.png");
-		width: 21px;
-		height: 14px;
-		margin-right: 37px;
-	}
-	&__menu {
-	
+		width: 20px;
+		height: 22px;
+		margin-right: 14px;
 	}
 }
 
 .btn.btn-secondary.dropdown-toggle {
-	display: block;
 	color: inherit;
-	padding: 22px 26px;
+	padding: 0 26px;
+	height: 52px;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.6rem;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	border-radius: 0;
@@ -261,7 +369,6 @@
 		flex-shrink: 0;
 		img {
 			width: 100%;
-			display: none;
 			&.active {
 				display: block;
 			}
