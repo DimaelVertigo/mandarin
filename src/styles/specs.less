@@ -1,6 +1,8 @@
 .specs {
 	position: relative;
-	width: 48%;
+	@media @desktop {
+		width: 48%;
+	}
 	&__list {
 		color: black;
 		margin-top: 15px;
@@ -38,9 +40,11 @@
 	&__item {
 		padding: 10px;
 		border-bottom: 1px solid #e7e7e7;
-		width: 350px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media @desktop {
+			width: 350px;
+		}
 	}
 }

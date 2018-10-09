@@ -1,10 +1,18 @@
 .site-footer {
-	margin-top: 60px;
+	@media @desktop {
+		margin-top: 60px;
+	}
 	&__menu {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		padding-top: 60px;
+		@media @mobile {
+			&>div {
+				width: 48%;
+				margin-bottom: 20px;
+			}
+		}
 	}
 	h3 {
 		color: #1c1c1c;
@@ -62,7 +70,9 @@
 }
 
 .contacts {
-	margin-right: 50px;
+	@media @desktop {
+		margin-right: 50px;
+	}
 	&__list {
 		color: #242424;
 		font-size: 1.9rem;
@@ -82,8 +92,10 @@
 }
 
 .copyright {
-	margin-top: 57px;
-	margin-bottom: 152px;
 	color: #999;
 	font-size: 1.2rem;
+	@media @desktop {
+		margin-top: 57px;
+		margin-bottom: 152px;
+	}
 }

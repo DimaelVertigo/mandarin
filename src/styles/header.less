@@ -6,18 +6,27 @@
 	min-height: 35px;
 	display: flex;
 	align-items: center;
+	@media @mobile {
+		padding: 15px 0;
+	}
 	&__container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+		@media @mobile {
+			justify-content: center;
+		}
 	}
 	&__left {
 		display: flex;
+		flex-wrap: wrap;
+		@media @mobile {
+			justify-content: center;
+		}
 	}
 	&__navigation {
-		margin-right: 77px;
 		ul {
 			display: flex;
 			align-items: center;
@@ -38,17 +47,24 @@
 		background: url("../images/top-menu-social.png");
 		width: 60px;
 		height: 23px;
+		@media @mobile {
+			margin: 10px 0;
+		}
+		@media @desktop {
+			margin-left: 70px;
+		}
 	}
 	
 	&__user {
+		@media @mobile {
+			display: flex;
+			justify-content: center;
+		}
 		i {
 			display: block;
 			background: url("../images/icon-user.png");
 			width: 26px;
 			height: 23px;
-			@media @retina {
-				background: url("../images/icon-user-2x.png");
-			}
 		}
 	}
 }
@@ -64,6 +80,13 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	&__left {
+		@media @mobile {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+	}
 	
 	&__logo {
 		display: block;
@@ -74,6 +97,10 @@
 	
 	&__connect {
 		display: flex;
+		@media @mobile {
+			margin: 10px 0;
+			flex-direction: column;
+		}
 		li {
 			display: flex;
 			align-items: center;
@@ -118,6 +145,9 @@
 			height: 29px;
 			border: 1px solid #a0a0a0;
 			border-radius: 3px;
+			@media @mobile {
+				height: 50px;
+			}
 		}
 		
 		.call {
@@ -167,6 +197,9 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		background-color: #fdf2e7;
+		@media @mobile {
+			flex-direction: column;
+		}
 	}
 	&__item {
 		display: flex;
@@ -180,6 +213,10 @@
 	background-color: #d5e79c;
 	position: relative;
 	width: 270px;
+	@media @mobile {
+		height: 52px;
+		width: 100%;
+	}
 	&:hover {
 		.main-category-menu {
 			display: block;
@@ -192,6 +229,9 @@
 		width: 21px;
 		height: 14px;
 		margin-right: 37px;
+		@media @mobile {
+			display: none;
+		}
 	}
 	&__link {
 		display: block;
@@ -204,6 +244,10 @@
 		height: 100%;
 		display: flex;
 		align-items: center;
+		@media @mobile {
+			display: flex;
+			justify-content: center;
+		}
 		&:hover {
 			background-color: #ebe5de;
 			text-decoration: none;
@@ -224,6 +268,10 @@
 	}
 	&--fixed {
 		position: static;
+		width: 270px;
+		@media @mobile {
+			width: 100%;
+		}
 	}
 	li {
 		padding: 0 15px;

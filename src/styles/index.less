@@ -1,7 +1,13 @@
 .banner {
 	display: flex;
+	@media @mobile {
+		flex-wrap: wrap;
+	}
 	&__wrapper {
 		position: relative;
+		@media @mobile {
+			margin: 20px 0;
+		}
 	}
 	&__image {
 		flex-shrink: 0;
@@ -18,25 +24,44 @@
 		font-size: 2.4rem;
 		text-transform: uppercase;
 		background-color: rgba(255, 255, 255, .35);
+		@media @mobile {
+			padding: 5px 10px;
+			font-size: 2rem;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+			line-height: 2.4rem
+		}
 	}
+	
 }
 
 .promo {
-	margin-top: 93px;
 	display: flex;
+	@media @mobile {
+		flex-direction: column;
+		margin-top: 40px;
+	}
+	@media @desktop {
+		margin-top: 93px;
+	}
 	&__left {
-		width: 47%;
+		@media @desktop {
+			width: 47%;
+		}
 		img {
 			width: 100%;
 		}
 	}
 	&__right {
-		width: 53%;
-		padding-left: 36px;
-		padding-right: 90px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		@media @desktop {
+			width: 53%;
+			padding-left: 36px;
+			padding-right: 90px;
+		}
 	}
 	
 	&__text {
@@ -58,6 +83,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+		@media @mobile {
+			margin: 20px 0;
+			justify-content: space-between;
+		}
 		li:not(:last-child) {
 			margin-right: 50px;
 		}
@@ -74,6 +103,9 @@
 	}
 	
 	&__actions {
+		@media @mobile {
+			display: flex;
+		}
 		.to-buy {
 			color: white;
 			font-size: 2.4rem;
@@ -105,10 +137,16 @@
 .types {
 	display: flex;
 	margin-top: 68px;
+	@media @mobile {
+		flex-direction: column;
+	}
 	a {
 		display: flex;
 		flex-direction: column;
 		.transition();
+		@media @mobile {
+			width: 100%;
+		}
 		&:not(:last-child) {
 			margin-right: 2px;
 		}
@@ -304,18 +342,34 @@
 		color: #333;
 		font-size: 2.4rem;
 		margin-bottom: 33px;
+		line-height: 2.6rem;
 	}
 	article {
 		display: flex;
+		@media @mobile {
+			flex-direction: column;
+		}
 		&:not(:last-child) {
 			margin-bottom: 38px;
+		}
+	}
+	&__texts {
+		@media @mobile {
+			margin-top: 20px;
 		}
 	}
 	&__image {
 		width: 206px;
 		height: 171px;
 		flex-shrink: 0;
-		margin-right: 62px;
+		
+		@media @mobile {
+			width: 100%;
+			height: auto;
+		}
+		@media @desktop {
+			margin-right: 62px;
+		}
 		img {
 			width: 100%;
 		}
@@ -324,6 +378,7 @@
 		color: #f60;
 		text-decoration: underline;
 		cursor: pointer;
+		
 		&:hover {
 			text-decoration: none;
 		}
