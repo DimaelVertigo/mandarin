@@ -1,10 +1,17 @@
 .photo {
+	
 	&__carousel {
 		margin: 50px 0;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media @mobile {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
 	}
 	&__controls {
 		a {

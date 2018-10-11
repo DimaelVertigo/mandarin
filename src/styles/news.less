@@ -1,11 +1,13 @@
 .news {
 	display: flex;
 	justify-content: space-between;
+	@media @mobile {
+		flex-wrap: wrap;
+	}
 }
 .info {
 	display: flex;
 	flex-direction: column;
-	
 }
 .holiday {
 	width: 42.834645669%;
@@ -13,6 +15,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@media @mobile {
+		width: 100%;
+	}
 	&__image {
 		margin-bottom: 35px;
 		align-self: center;
@@ -34,6 +39,11 @@
 	flex-shrink: 0;
 	background-color: #f9fbf0;
 	padding: 15px;
+	@media @mobile {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 100%;
+	}
 	&__title {
 		font-size: 1.4rem;
 		line-height: 2.4rem;
@@ -42,6 +52,10 @@
 	}
 	&__article {
 		margin-bottom: 50px;
+		@media @mobile {
+			display: flex;
+			justify-content: center;
+		}
 		a {
 			cursor: pointer;
 		}
@@ -68,7 +82,9 @@
 .bottom-controls {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 87px;
+	@media @desktop {
+		padding: 0 87px;
+	}
 	
 	&__prev,
 	&__next {
@@ -111,11 +127,18 @@
 	margin-top: 45px;
 	margin-bottom: 100px;
 	display: flex;
+	@media @mobile {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 	&__image {
 		margin-right: 20px;
 	}
 	&__texts {
 		padding-right: 70px;
+		@media @mobile {
+			margin-top: 25px;
+		}
 		p {
 			margin-bottom: 25px;
 			font-weight: 400;

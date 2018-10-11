@@ -350,6 +350,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .cart {
+    margin-top: 10px;
+  }
+}
 .cart__icon {
   display: block;
   background: url("../images/icon-cart.png");
@@ -1795,6 +1800,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .news {
+    flex-wrap: wrap;
+  }
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -1805,6 +1815,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .holiday {
+    width: 100%;
+  }
 }
 .holiday__image {
   margin-bottom: 35px;
@@ -1826,6 +1841,13 @@ body {
   background-color: #f9fbf0;
   padding: 15px;
 }
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .news-aside {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
 .news-aside__title {
   font-size: 1.4rem;
   line-height: 2.4rem;
@@ -1834,6 +1856,12 @@ body {
 }
 .news-aside__article {
   margin-bottom: 50px;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .news-aside__article {
+    display: flex;
+    justify-content: center;
+  }
 }
 .news-aside__article a {
   cursor: pointer;
@@ -1856,7 +1884,11 @@ body {
 .bottom-controls {
   display: flex;
   justify-content: space-between;
-  padding: 0 87px;
+}
+@media only screen and  (min-width: 769px) {
+  .bottom-controls {
+    padding: 0 87px;
+  }
 }
 .bottom-controls__prev,
 .bottom-controls__next {
@@ -1898,11 +1930,22 @@ body {
   margin-bottom: 100px;
   display: flex;
 }
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .blog {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .blog__image {
   margin-right: 20px;
 }
 .blog__texts {
   padding-right: 70px;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .blog__texts {
+    margin-top: 25px;
+  }
 }
 .blog__texts p {
   margin-bottom: 25px;
@@ -1915,6 +1958,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .photo__carousel {
+    width: 100%;
+  }
+  .photo__carousel img {
+    width: 100%;
+  }
 }
 .photo__controls a {
   position: absolute;
