@@ -38,17 +38,20 @@
 
 .promo {
 	display: flex;
+	
 	@media @mobile {
-		flex-direction: column;
 		margin-top: 40px;
+		border: 3px solid orange;
+		border-radius: 15px;
+		padding: 30px 10px;
+		
 	}
 	@media @desktop {
 		margin-top: 93px;
 	}
 	&__left {
-		@media @desktop {
-			width: 47%;
-		}
+		width: 47%;
+		
 		img {
 			width: 100%;
 		}
@@ -57,26 +60,40 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		width: 53%;
 		@media @desktop {
-			width: 53%;
 			padding-left: 36px;
 			padding-right: 90px;
 		}
-	}
-	
-	&__text {
-	
+		@media @mobile {
+			padding-left: 20px;
+		}
 	}
 	
 	&__title {
 		margin-top: 22px;
-		font-size: 3rem;
-		line-height: 3.3rem;
+		
+		@media @mobile {
+			font-size: 2rem;
+			line-height: 2.3rem;
+		}
+		@media @desktop {
+			font-size: 3rem;
+			line-height: 3.3rem;
+		}
 	}
 	&__description {
 		margin-top: 33px;
 		font-size: 1.6rem;
 		line-height: 1.8rem;
+		@media @mobile {
+			font-size: 1.2rem;
+			//line-height: 1.6rem;
+		}
+		@media @desktop {
+			font-size: 1.6rem;
+			line-height: 1.8rem;
+		}
 	}
 	
 	&__timing {
@@ -85,16 +102,27 @@
 		justify-content: flex-start;
 		@media @mobile {
 			margin: 20px 0;
-			justify-content: space-between;
+		}
+		li {
+			@media @mobile {
+				margin-bottom: 20px;
+			}
 		}
 		li:not(:last-child) {
 			margin-right: 50px;
 		}
 		.value {
 			color: #98d62c;
-			font-size: 3rem;
 			font-weight: 700;
 			margin-bottom: 8px;
+			@media @mobile {
+				font-size: 2em;
+				line-height: 2.4rem;
+			}
+			@media @desktop {
+				font-size: 3rem;
+				line-height: 3.4rem;
+			}
 		}
 		.key {
 			color: #666;
@@ -105,6 +133,7 @@
 	&__actions {
 		@media @mobile {
 			display: flex;
+			flex-wrap: wrap;
 		}
 		.to-buy {
 			color: white;
@@ -121,6 +150,9 @@
 		.to-favourites {
 			color: #999;
 			font-size: 1.2rem;
+			@media @mobile {
+				margin-top: 20px;
+			}
 			&::before {
 				content: '';
 				display: block;
@@ -174,6 +206,7 @@
 
 .hits {
 	margin-top: 34px;
+	//overflow: hidden;
 }
 
 .hits-swither {
@@ -196,24 +229,27 @@
 	margin-top: 36px;
 	position: relative;
 	&__controls {
+		position: relative;
+		z-index: 4;
 		a {
 			display: block;
 			position: absolute;
-			background: url("../images/prev-arrow-type-2.png");
-			width: 51px;
-			height: 51px;
+			background: url("../images/prev-arrow-type-2.png") center;
+			width: 38px;
+			height: 40px;
+			border-radius: 4px;
 			&:hover {
 				cursor: pointer;
 			}
 		}
 		.prev {
 			top: 87px;
-			left: -50px;
+			left: 0;
 		}
 		.next {
-			background: url("../images/prev-arrow-type-2.png");
+			background: url("../images/prev-arrow-type-2.png") center;
 			top: 87px;
-			right: -50px;
+			right: 0;
 			transform: rotate(-180deg);
 		}
 	}
@@ -221,11 +257,13 @@
 
 .hits-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
+	@media @mobile {
+		justify-content: center;
+	}
 	&__item {
 		width: 270px;
-		//height: 369px;
 		background-color: white;
 		border-radius: 5px;
 		display: flex;
@@ -233,8 +271,8 @@
 		padding: 23px 27px 20px;
 		border: 1px solid transparent;
 		z-index: 3;
-		
 		.transition();
+		
 		&:hover {
 			border: 1px solid #cecece;
 			.hidden-specs {
@@ -263,7 +301,7 @@
 	&__mark {
 		position: absolute;
 		top: 5px;
-		left: -13px;
+		left: 0;
 		background: url("../images/flag.png") center;
 		width: 50px;
 		height: 32px;
@@ -345,7 +383,6 @@
 	}
 }
 
-
 .sale {
 	margin-top: 75px;
 	img {
@@ -364,30 +401,24 @@
 	}
 	article {
 		display: flex;
-		@media @mobile {
-			flex-direction: column;
-		}
 		&:not(:last-child) {
 			margin-bottom: 38px;
 		}
+		@media @mobile {
+			max-height: 150px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			//white-space: nowrap;
+		}
 	}
 	&__texts {
-		@media @mobile {
-			margin-top: 20px;
-		}
 	}
 	&__image {
 		width: 206px;
 		height: 171px;
 		flex-shrink: 0;
+		margin-right: 62px;
 		
-		@media @mobile {
-			width: 100%;
-			height: auto;
-		}
-		@media @desktop {
-			margin-right: 62px;
-		}
 		img {
 			width: 100%;
 		}
