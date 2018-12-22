@@ -223,9 +223,9 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	li {
+	&__item {
 		width: 270px;
-		height: 369px;
+		//height: 369px;
 		background-color: white;
 		border-radius: 5px;
 		display: flex;
@@ -237,11 +237,16 @@
 		.transition();
 		&:hover {
 			border: 1px solid #cecece;
+			.hidden-specs {
+				opacity: 1;
+			}
+			.hits-list__exist {
+				color: #9c3;
+			}
 		}
 	}
 	&__image {
-		//width: 209px;
-		height: 178px;
+		height: 214px;
 		img {
 			width: 100%;
 		}
@@ -274,6 +279,7 @@
 		color: #626262;
 		font-size: 1.2rem;
 		margin-left: 11px;
+		.transition();
 	}
 	&__to-favourites {
 		margin-top: 32px;
@@ -291,6 +297,18 @@
 			height: 24px;
 			float: left;
 			margin-right: 15px;
+		}
+	}
+}
+
+.hidden-specs {
+	font-size: 1.2rem;
+	margin-top: 11px;
+	transition: all .2s linear;
+	opacity: 0;
+	&__item {
+		span {
+			font-weight: bold;
 		}
 	}
 }
