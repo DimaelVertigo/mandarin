@@ -230,12 +230,12 @@
 		width: 100%;
 	}
 	&:hover, &:focus {
-		@media @mobile {
-			.main-category-menu {
-				width: 100%;
-				left: 0;
-			}
-		}
+		//@media @mobile {
+		//	.main-category-menu {
+		//		width: 100%;
+		//		left: 0;
+		//	}
+		//}
 		@media @desktop {
 			display: block;
 		}
@@ -280,6 +280,7 @@
 	width: 270px;
 	background-color: #fff;
 	z-index: 5;
+	flex-shrink: 0;
 	@media @mobile {
 		left: -100%;
 		.transition(.5s);
@@ -287,8 +288,16 @@
 	@media @desktop {
 		display: none;
 	}
+	
+	
 	&--visible {
-		display: block;
+		@media @mobile {
+			left: 0;
+			width: 100%;
+		}
+		@media @desktop {
+			display: block;
+		}
 	}
 	&--fixed {
 		position: static;
