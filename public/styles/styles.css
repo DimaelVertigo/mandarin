@@ -479,6 +479,7 @@ body {
 .main-category-menu--fixed {
   position: static;
   width: 270px;
+  display: block;
 }
 @media only screen and (max-width : 768px) {
   .main-category-menu--fixed {
