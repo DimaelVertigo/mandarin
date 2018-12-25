@@ -230,9 +230,11 @@
 	margin-top: 36px;
 	position: relative;
 	&__controls {
-		position: relative;
+		position: absolute;
+		top: 0;
+		width: 100%;
 		z-index: 4;
-		a {
+		.carousel-control-prev, .carousel-control-next {
 			display: block;
 			position: absolute;
 			background: url("../images/prev-arrow-type-2.png") center;
@@ -243,12 +245,11 @@
 				cursor: pointer;
 			}
 		}
-		.prev {
+		.carousel-control-prev {
 			top: 87px;
 			left: 0;
 		}
-		.next {
-			background: url("../images/prev-arrow-type-2.png") center;
+		.carousel-control-next {
 			top: 87px;
 			right: 0;
 			transform: rotate(-180deg);

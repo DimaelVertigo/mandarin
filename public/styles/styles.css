@@ -900,10 +900,13 @@ body {
   position: relative;
 }
 .hits-carousel__controls {
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 4;
 }
-.hits-carousel__controls a {
+.hits-carousel__controls .carousel-control-prev,
+.hits-carousel__controls .carousel-control-next {
   display: block;
   position: absolute;
   background: url("../images/prev-arrow-type-2.png") center;
@@ -911,15 +914,15 @@ body {
   height: 40px;
   border-radius: 4px;
 }
-.hits-carousel__controls a:hover {
+.hits-carousel__controls .carousel-control-prev:hover,
+.hits-carousel__controls .carousel-control-next:hover {
   cursor: pointer;
 }
-.hits-carousel__controls .prev {
+.hits-carousel__controls .carousel-control-prev {
   top: 87px;
   left: 0;
 }
-.hits-carousel__controls .next {
-  background: url("../images/prev-arrow-type-2.png") center;
+.hits-carousel__controls .carousel-control-next {
   top: 87px;
   right: 0;
   transform: rotate(-180deg);
